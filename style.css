@@ -106,6 +106,183 @@ p {
     width: 100%;
 }
 
+.btn-lang-switch {
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 999px;
+    background: #00AEEF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 174, 239, 0.08);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+    z-index: 10;
+}
+.btn-lang-switch:hover, .btn-lang-switch:focus {
+    background: #007fa3;
+    color: #fff;
+}
+@media (max-width: 600px) {
+    .btn-lang-switch {
+        padding: 7px 12px;
+        font-size: 0.95rem;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}
+
+.btn-dark-switch {
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 8px 16px;
+    font-size: 1.1rem;
+    border-radius: 999px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+    z-index: 10;
+}
+.btn-dark-switch:hover, .btn-dark-switch:focus {
+    background: #444;
+    color: #ffe082;
+}
+
+/* الوضع الداكن */
+.dark-theme {
+    background: #181c23 !important;
+    color: #f1f3fa !important;
+}
+.dark-theme body,
+.dark-theme .container,
+.dark-theme .header,
+.dark-theme .footer,
+.dark-theme .navbar,
+.dark-theme .section-header,
+.dark-theme .about,
+.dark-theme .services,
+.dark-theme .why-choose-us,
+.dark-theme .careers,
+.dark-theme .contact,
+.dark-theme .companies,
+.dark-theme .job-ads {
+    background: #1a2233 !important;
+    color: #f1f3fa !important;
+}
+.dark-theme .card,
+.dark-theme .service-card,
+.dark-theme .team-slider,
+.dark-theme .job-ad-card,
+.dark-theme .company-card,
+.dark-theme .footer-section,
+.dark-theme .modal-content {
+    background: none !important;
+    color: #f1f3fa !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+.dark-theme .btn,
+.dark-theme .btn-primary {
+    background: #223a5e !important;
+    color: #7ecbff !important;
+    border-color: #223a5e !important;
+}
+.dark-theme .btn:hover,
+.dark-theme .btn-primary:hover {
+    background: #2d4a7a !important;
+    color: #fff !important;
+}
+.dark-theme .btn-lang-switch,
+.dark-theme .btn-dark-switch {
+    background: #232a3b !important;
+    color: #7ecbff !important;
+    border: 1px solid #223a5e !important;
+}
+.dark-theme .btn-lang-switch:hover,
+.dark-theme .btn-dark-switch:hover {
+    background: #223a5e !important;
+    color: #fff !important;
+}
+.dark-theme .nav-link,
+.dark-theme .footer-links a {
+    color: #7ecbff !important;
+}
+.dark-theme .nav-link.active,
+.dark-theme .footer-links a:hover {
+    color: #7ecbff !important;
+}
+
+.dark-theme .dropdown-menu {
+    background: #2d3748 !important;
+    border-color: #4a5568 !important;
+}
+
+.dark-theme .dropdown-item {
+    color: #e2e8f0 !important;
+    border-bottom-color: #4a5568 !important;
+}
+
+.dark-theme .dropdown-item:hover {
+    background: #4a5568 !important;
+    color: #00AEEF !important;
+}
+.dark-theme .hero-background,
+.dark-theme .hero-slider,
+.dark-theme .hero-slide,
+.dark-theme .slide-overlay,
+.dark-theme .slide-content {
+    background: transparent !important;
+}
+.dark-theme .slide-content,
+.dark-theme .hero-service-item,
+.dark-theme .slide-feature {
+    background: rgba(30,34,44,0.82) !important;
+    color: #7ecbff !important;
+    border-color: #223a5e !important;
+}
+.dark-theme .slide-title,
+.dark-theme .section-title,
+.dark-theme .team-name {
+    color: #7ecbff !important;
+}
+.dark-theme .slide-description,
+.dark-theme .section-subtitle,
+.dark-theme .team-position {
+    color: #b0b8c9 !important;
+}
+.dark-theme .footer {
+    background: #181c23 !important;
+    color: #b0b8c9 !important;
+}
+.dark-theme .footer-logo-text {
+    color: #7ecbff !important;
+}
+.dark-theme .social-link svg {
+    fill: #7ecbff !important;
+}
+@media (max-width: 600px) {
+    .btn-dark-switch {
+        padding: 7px 10px;
+        font-size: 1rem;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}
+
 /* Header */
 .header {
     position: fixed;
@@ -182,17 +359,83 @@ p {
     color: #00AEEF;
 }
 
-.contact-btn {
-    background: linear-gradient(135deg, #00AEEF 0%, #0099cc 100%);
-    color: white !important;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    transition: all 0.3s ease;
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.contact-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 174, 239, 0.3);
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    margin-right: 5px;
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 12px 20px;
+    color: #2d3748;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #f7fafc;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: #ffffff;
+    color: #00AEEF;
+    padding-right: 25px;
+}
+
+.contact-btn {
+    background: #00AEEF !important;
+    color: #fff !important;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+.contact-btn:hover, .contact-btn:focus {
+    background: #007fa3 !important;
+    color: #fff !important;
 }
 
 .nav-toggle {
@@ -594,7 +837,7 @@ p {
 /* Job Advertisements Section */
 .job-ads {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     position: relative;
     overflow: hidden;
 }
@@ -851,7 +1094,7 @@ p {
 /* Services Section */
 .services {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
 }
 
 .services-grid {
@@ -928,9 +1171,12 @@ p {
 }
 
 .service-title {
-    font-size: 1.25rem;
     color: #1a202c;
-    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.dark-theme .service-title {
+    color: #7ecbff !important;
+    font-weight: bold;
 }
 
 .service-description {
@@ -1027,18 +1273,22 @@ p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-img:hover {
-    transform: scale(1.1);
-}
+.gallery-img {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* حركة سلسة عند الهوفر */
 }
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
 
 /* Why Choose Us Section */
 .why-choose-us {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     position: relative;
     overflow: hidden;
 }
@@ -1213,7 +1463,7 @@ p {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     border-radius: 20px;
     text-align: center;
     transition: all 0.8s ease;
@@ -1264,7 +1514,7 @@ p {
 /* Companies Section */
 .companies {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
 }
 
 .companies-grid {
@@ -1333,7 +1583,7 @@ p {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem;
-    background: #f7fafc;
+    background: #ffffff;
     border-radius: 15px;
     border: 1px solid #e2e8f0;
 }
@@ -1368,10 +1618,88 @@ p {
 
 /* Form Styles */
 .form {
-    background: #f7fafc;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 20px;
     border: 1px solid #e2e8f0;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00AEEF;
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #718096;
+}
+
+.contact-form .btn-full {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#form-status {
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#form-status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#form-status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#form-status.loading {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
 }
 
 .form-group {
@@ -1563,6 +1891,14 @@ p {
         gap: 3rem;
     }
     
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form {
+        order: 1;
+    }
+    
     .about-text {
         padding-right: 0;
     }
@@ -1608,6 +1944,45 @@ p {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .dropdown-item {
+        padding: 8px 0;
+        border-bottom: none;
+        color: #2d3748;
+    }
+    
+    .dropdown-item:hover {
+        background: transparent;
+        color: #00AEEF;
+        padding-left: 10px;
+    }
+    
+    .dark-theme .dropdown-menu {
+        background: transparent !important;
+        border: none !important;
+    }
+    
+    .dark-theme .dropdown-item {
+        color: #7ecbff !important;
+        border-bottom: none !important;
+    }
+    
+    .dark-theme .dropdown-item:hover {
+        background: transparent !important;
+        color: #00AEEF !important;
     }
     
     .nav-toggle {
@@ -1700,6 +2075,41 @@ p {
     
     .company-logo {
         max-height: 50px;
+    }
+    
+    .contact {
+        padding: 4rem 0;
+    }
+    
+    .contact-content {
+        gap: 2rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .contact-details h4 {
+        font-size: 0.9rem;
+    }
+    
+    .contact-details p {
+        font-size: 0.85rem;
     }
     
     .footer-content {
@@ -1853,4 +2263,165 @@ p {
     .hero-buttons {
         display: none !important;
     }
+}
+
+.dark-theme .feature-text h4 {
+    color: #7ecbff !important;
+    font-weight: bold;
+}
+
+.dark-theme .careers-info h3 {
+    color: #7ecbff !important;
+    font-weight: bold;
+}
+
+.dark-theme .contact-btn {
+    background: #232a3b !important;
+    color: #7ecbff !important;
+    border: 1.5px solid #223a5e !important;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.dark-theme .contact-btn:hover, .dark-theme .contact-btn:focus {
+    background: #223a5e !important;
+    color: #fff !important;
+    border-color: #223a5e !important;
+}
+
+.btn-dark-switch {
+    color: #7ecbff !important;
+    background: transparent !important;
+    border: none !important;
+}
+.btn-dark-switch:hover, .btn-dark-switch:focus {
+    color: #0099cc !important;
+    background: rgba(126,203,255,0.08) !important;
+}
+
+.dark-theme .nav-logo {
+    position: relative;
+}
+.dark-theme .nav-logo::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    z-index: 0;
+    background: rgba(255,255,255,0.32);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+}
+.dark-theme .logo-img {
+    position: relative;
+    z-index: 1;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9999;
+  background: #00AEEF;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 4px 16px rgba(0,174,239,0.15);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#backToTop svg {
+  display: block;
+  margin: auto;
+  color: #fff;
+  stroke: #fff;
+}
+#backToTop:hover, #backToTop:focus {
+  background: #007fa3;
+  box-shadow: 0 8px 24px rgba(0,174,239,0.25);
+  transform: translateY(-4px) scale(1.08);
+}
+.dark-theme #backToTop {
+  background: #223a5e;
+  color: #7ecbff;
+  box-shadow: 0 4px 16px rgba(34,58,94,0.18);
+}
+.dark-theme #backToTop:hover, .dark-theme #backToTop:focus {
+  background: #2d4a7a;
+  color: #fff;
+}
+
+.dark-theme .contact {
+    background: #1a2233 !important;
+    color: #f1f3fa !important;
+}
+
+.dark-theme .contact-item {
+    background: #2d3748 !important;
+    border-color: #4a5568 !important;
+    color: #f1f3fa !important;
+}
+
+.dark-theme .contact-form {
+    background: #2d3748 !important;
+    border-color: #4a5568 !important;
+    color: #f1f3fa !important;
+}
+
+.dark-theme .contact-form input,
+.dark-theme .contact-form select,
+.dark-theme .contact-form textarea {
+    background: #1a202c !important;
+    border-color: #4a5568 !important;
+    color: #f1f3fa !important;
+}
+
+.dark-theme .contact-form input:focus,
+.dark-theme .contact-form select:focus,
+.dark-theme .contact-form textarea:focus {
+    border-color: #00AEEF !important;
+    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.2) !important;
+}
+
+.dark-theme .contact-details h4 {
+    color: #7ecbff !important;
+}
+
+.dark-theme .contact-details p {
+    color: #b0b8c9 !important;
+}
+
+.dark-theme #form-status.success {
+    background: #1e4a2e !important;
+    color: #9ae6b4 !important;
+    border-color: #38a169 !important;
+}
+
+.dark-theme #form-status.error {
+    background: #4a1e1e !important;
+    color: #feb2b2 !important;
+    border-color: #e53e3e !important;
+}
+
+.dark-theme #form-status.loading {
+    background: #1e4a5e !important;
+    color: #9de6ff !important;
+    border-color: #3182ce !important;
+}
+
+.dark-theme .contact-form input::placeholder,
+.dark-theme .contact-form textarea::placeholder {
+    color: #718096 !important;
 }
