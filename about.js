@@ -25,22 +25,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     
+    console.log('navToggle:', navToggle); // Debug
+    console.log('navMenu:', navMenu); // Debug
+    
     if (navToggle && navMenu) {
         navToggle.addEventListener('click', function() {
+            console.log('Toggle clicked!'); // Debug
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            console.log('Menu active:', navMenu.classList.contains('active')); // Debug
         });
     }
 
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
+    // Close mobile menu when clicking on a link or contact button
+    const navLinks = document.querySelectorAll('.nav-link, .contact-btn');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
-            if (navMenu.classList.contains('active')) {
+            if (navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
             }
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (navToggle && navMenu && !navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        }
+    });
+
+    // Close menu when resizing window
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        }
     });
 
     // Header scroll effect
@@ -279,9 +300,6 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearElement.textContent = new Date().getFullYear();
     }
 });
-
-
-
 // Smooth scroll for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     const smoothNavLinks = document.querySelectorAll('a[href^="#"]');
@@ -302,3 +320,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+

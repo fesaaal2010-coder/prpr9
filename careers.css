@@ -208,39 +208,7 @@
     font-weight: 600;
 }
 
-/* Dark Theme */
-.dark-theme .job-ads {
-    background: #1a2233;
-}
 
-.dark-theme .job-ads .section-title {
-    color: #7ecbff;
-}
-
-.dark-theme .job-ads .section-subtitle {
-    color: #b0b8c9;
-}
-
-.dark-theme .job-ad-card {
-    background: #2d3748;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.dark-theme .job-ad-overlay {
-    background: linear-gradient(135deg, rgba(45, 55, 72, 0.95) 0%, rgba(45, 55, 72, 0.9) 100%);
-}
-
-.dark-theme .job-ad-content h3 {
-    color: #7ecbff;
-}
-
-.dark-theme .job-ad-content .job-description {
-    color: #b0b8c9;
-}
-
-.dark-theme .job-ads-note {
-    color: #b0b8c9;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -312,4 +280,9 @@
     .job-ad-image {
         height: 180px;
     }
+}
+
+/* Hide hamburger menu for careers page */
+.nav-toggle {
+    display: none !important;
 }

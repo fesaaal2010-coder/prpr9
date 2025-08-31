@@ -1,5 +1,10 @@
 /* Specialty Page Specific Styles */
 
+/* Hide hamburger menu for specialty page */
+.nav-toggle {
+    display: none !important;
+}
+
 /* Hero Section */
 .specialty-hero {
     position: relative;
