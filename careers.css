@@ -40,7 +40,7 @@
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 400px;
+    height: 500px;
 }
 
 .job-ad-card:hover {
@@ -50,7 +50,7 @@
 
 .job-ad-image {
     position: relative;
-    height: 250px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
     right: 1rem;
     width: 40px;
     height: 40px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 174, 239, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
 .image-zoom-icon svg {
     width: 20px;
     height: 20px;
-    color: #00AEEF;
+    color: white;
 }
 
 .job-ad-overlay {
@@ -101,12 +101,13 @@
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
     backdrop-filter: blur(10px);
     padding: 1.5rem;
-    transform: translateY(100%);
+    transform: translateY(0);
     transition: transform 0.3s ease;
 }
 
 .job-ad-card:hover .job-ad-overlay {
     transform: translateY(0);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .job-ad-content h3 {
@@ -208,39 +209,7 @@
     font-weight: 600;
 }
 
-/* Dark Theme */
-.dark-theme .job-ads {
-    background: #1a2233;
-}
 
-.dark-theme .job-ads .section-title {
-    color: #7ecbff;
-}
-
-.dark-theme .job-ads .section-subtitle {
-    color: #b0b8c9;
-}
-
-.dark-theme .job-ad-card {
-    background: #2d3748;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.dark-theme .job-ad-overlay {
-    background: linear-gradient(135deg, rgba(45, 55, 72, 0.95) 0%, rgba(45, 55, 72, 0.9) 100%);
-}
-
-.dark-theme .job-ad-content h3 {
-    color: #7ecbff;
-}
-
-.dark-theme .job-ad-content .job-description {
-    color: #b0b8c9;
-}
-
-.dark-theme .job-ads-note {
-    color: #b0b8c9;
-}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -265,11 +234,11 @@
     }
     
     .job-ad-card {
-        height: 350px;
+        height: 450px;
     }
     
     .job-ad-image {
-        height: 200px;
+        height: 300px;
     }
     
     .job-ad-overlay {
@@ -306,10 +275,15 @@
     }
     
     .job-ad-card {
-        height: 320px;
+        height: 400px;
     }
     
     .job-ad-image {
-        height: 180px;
+        height: 250px;
     }
+}
+
+/* Hide hamburger menu for careers page */
+.nav-toggle {
+    display: none !important;
 }

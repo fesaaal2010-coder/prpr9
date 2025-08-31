@@ -279,7 +279,20 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentImageIndex = 0;
     let allImages = [];
     
-    // Collect all images from logistics and specialized sections
+    // Collect all images from timeline, logistics and specialized sections
+    
+    // Add timeline images
+    timelineItems.forEach((item, index) => {
+        const img = item.querySelector('img');
+        if (img) {
+            allImages.push({
+                src: img.src,
+                alt: img.alt,
+                index: index,
+                section: 'timeline'
+            });
+        }
+    });
     
     // Add logistics images
     logisticsItems.forEach((item, index) => {
@@ -320,10 +333,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Open modal when clicking on timeline images
+    timelineItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+            currentImageIndex = index;
+            openModal();
+        });
+    });
+    
     // Open modal when clicking on logistics images
     logisticsItems.forEach((item, index) => {
         item.addEventListener('click', function() {
-            currentImageIndex = index;
+            currentImageIndex = timelineItems.length + index;
             openModal();
         });
     });
@@ -331,7 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open modal when clicking on specialized images
     specializedItems.forEach((item, index) => {
         item.addEventListener('click', function() {
-            currentImageIndex = logisticsItems.length + index;
+            currentImageIndex = timelineItems.length + logisticsItems.length + index;
             openModal();
         });
     });
@@ -339,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open modal when clicking on contact & communication images
     contactCommunicationItems.forEach((item, index) => {
         item.addEventListener('click', function() {
-            currentImageIndex = logisticsItems.length + specializedItems.length + index;
+            currentImageIndex = timelineItems.length + logisticsItems.length + specializedItems.length + index;
             openModal();
         });
     });
