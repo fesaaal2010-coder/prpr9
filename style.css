@@ -137,151 +137,7 @@ p {
     }
 }
 
-.btn-dark-switch {
-    margin-right: 8px;
-    margin-left: 8px;
-    padding: 8px 16px;
-    font-size: 1.1rem;
-    border-radius: 999px;
-    background: #222;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    font-family: inherit;
-    font-weight: 600;
-    letter-spacing: 1px;
-    outline: none;
-    z-index: 10;
-}
-.btn-dark-switch:hover, .btn-dark-switch:focus {
-    background: #444;
-    color: #ffe082;
-}
 
-/* الوضع الداكن */
-.dark-theme {
-    background: #181c23 !important;
-    color: #f1f3fa !important;
-}
-.dark-theme body,
-.dark-theme .container,
-.dark-theme .header,
-.dark-theme .footer,
-.dark-theme .navbar,
-.dark-theme .section-header,
-.dark-theme .about,
-.dark-theme .services,
-.dark-theme .why-choose-us,
-.dark-theme .careers,
-.dark-theme .contact,
-.dark-theme .companies,
-.dark-theme .job-ads {
-    background: #1a2233 !important;
-    color: #f1f3fa !important;
-}
-.dark-theme .card,
-.dark-theme .service-card,
-.dark-theme .team-slider,
-.dark-theme .job-ad-card,
-.dark-theme .company-card,
-.dark-theme .footer-section,
-.dark-theme .modal-content {
-    background: none !important;
-    color: #f1f3fa !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-}
-.dark-theme .btn,
-.dark-theme .btn-primary {
-    background: #223a5e !important;
-    color: #7ecbff !important;
-    border-color: #223a5e !important;
-}
-.dark-theme .btn:hover,
-.dark-theme .btn-primary:hover {
-    background: #2d4a7a !important;
-    color: #fff !important;
-}
-.dark-theme .btn-lang-switch,
-.dark-theme .btn-dark-switch {
-    background: #232a3b !important;
-    color: #7ecbff !important;
-    border: 1px solid #223a5e !important;
-}
-.dark-theme .btn-lang-switch:hover,
-.dark-theme .btn-dark-switch:hover {
-    background: #223a5e !important;
-    color: #fff !important;
-}
-.dark-theme .nav-link,
-.dark-theme .footer-links a {
-    color: #7ecbff !important;
-}
-.dark-theme .nav-link.active,
-.dark-theme .footer-links a:hover {
-    color: #7ecbff !important;
-}
-
-.dark-theme .dropdown-menu {
-    background: #2d3748 !important;
-    border-color: #4a5568 !important;
-}
-
-.dark-theme .dropdown-item {
-    color: #e2e8f0 !important;
-    border-bottom-color: #4a5568 !important;
-}
-
-.dark-theme .dropdown-item:hover {
-    background: #4a5568 !important;
-    color: #00AEEF !important;
-}
-.dark-theme .hero-background,
-.dark-theme .hero-slider,
-.dark-theme .hero-slide,
-.dark-theme .slide-overlay,
-.dark-theme .slide-content {
-    background: transparent !important;
-}
-.dark-theme .slide-content,
-.dark-theme .hero-service-item,
-.dark-theme .slide-feature {
-    background: rgba(30,34,44,0.82) !important;
-    color: #7ecbff !important;
-    border-color: #223a5e !important;
-}
-.dark-theme .slide-title,
-.dark-theme .section-title,
-.dark-theme .team-name {
-    color: #7ecbff !important;
-}
-.dark-theme .slide-description,
-.dark-theme .section-subtitle,
-.dark-theme .team-position {
-    color: #b0b8c9 !important;
-}
-.dark-theme .footer {
-    background: #181c23 !important;
-    color: #b0b8c9 !important;
-}
-.dark-theme .footer-logo-text {
-    color: #7ecbff !important;
-}
-.dark-theme .social-link svg {
-    fill: #7ecbff !important;
-}
-@media (max-width: 600px) {
-    .btn-dark-switch {
-        padding: 7px 10px;
-        font-size: 1rem;
-        margin-right: 4px;
-        margin-left: 4px;
-    }
-}
 
 /* Header */
 .header {
@@ -1174,10 +1030,7 @@ p {
     color: #1a202c;
     font-weight: bold;
 }
-.dark-theme .service-title {
-    color: #7ecbff !important;
-    font-weight: bold;
-}
+
 
 .service-description {
     color: #718096;
@@ -1970,20 +1823,7 @@ p {
         padding-left: 10px;
     }
     
-    .dark-theme .dropdown-menu {
-        background: transparent !important;
-        border: none !important;
-    }
-    
-    .dark-theme .dropdown-item {
-        color: #7ecbff !important;
-        border-bottom: none !important;
-    }
-    
-    .dark-theme .dropdown-item:hover {
-        background: transparent !important;
-        color: #00AEEF !important;
-    }
+
     
     .nav-toggle {
         display: flex;
@@ -2265,63 +2105,6 @@ p {
     }
 }
 
-.dark-theme .feature-text h4 {
-    color: #7ecbff !important;
-    font-weight: bold;
-}
-
-.dark-theme .careers-info h3 {
-    color: #7ecbff !important;
-    font-weight: bold;
-}
-
-.dark-theme .contact-btn {
-    background: #232a3b !important;
-    color: #7ecbff !important;
-    border: 1.5px solid #223a5e !important;
-    border-radius: 999px;
-    padding: 10px 22px;
-    font-weight: 600;
-    font-family: inherit;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    transition: background 0.2s, color 0.2s, border 0.2s;
-}
-.dark-theme .contact-btn:hover, .dark-theme .contact-btn:focus {
-    background: #223a5e !important;
-    color: #fff !important;
-    border-color: #223a5e !important;
-}
-
-.btn-dark-switch {
-    color: #7ecbff !important;
-    background: transparent !important;
-    border: none !important;
-}
-.btn-dark-switch:hover, .btn-dark-switch:focus {
-    color: #0099cc !important;
-    background: rgba(126,203,255,0.08) !important;
-}
-
-.dark-theme .nav-logo {
-    position: relative;
-}
-.dark-theme .nav-logo::before {
-    content: '';
-    position: absolute;
-    inset: -6px;
-    z-index: 0;
-    background: rgba(255,255,255,0.32);
-    border-radius: 16px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
-}
-.dark-theme .logo-img {
-    position: relative;
-    z-index: 1;
-}
-
 #backToTop {
   display: none;
   position: fixed;
@@ -2352,76 +2135,4 @@ p {
   background: #007fa3;
   box-shadow: 0 8px 24px rgba(0,174,239,0.25);
   transform: translateY(-4px) scale(1.08);
-}
-.dark-theme #backToTop {
-  background: #223a5e;
-  color: #7ecbff;
-  box-shadow: 0 4px 16px rgba(34,58,94,0.18);
-}
-.dark-theme #backToTop:hover, .dark-theme #backToTop:focus {
-  background: #2d4a7a;
-  color: #fff;
-}
-
-.dark-theme .contact {
-    background: #1a2233 !important;
-    color: #f1f3fa !important;
-}
-
-.dark-theme .contact-item {
-    background: #2d3748 !important;
-    border-color: #4a5568 !important;
-    color: #f1f3fa !important;
-}
-
-.dark-theme .contact-form {
-    background: #2d3748 !important;
-    border-color: #4a5568 !important;
-    color: #f1f3fa !important;
-}
-
-.dark-theme .contact-form input,
-.dark-theme .contact-form select,
-.dark-theme .contact-form textarea {
-    background: #1a202c !important;
-    border-color: #4a5568 !important;
-    color: #f1f3fa !important;
-}
-
-.dark-theme .contact-form input:focus,
-.dark-theme .contact-form select:focus,
-.dark-theme .contact-form textarea:focus {
-    border-color: #00AEEF !important;
-    box-shadow: 0 0 0 3px rgba(0, 174, 239, 0.2) !important;
-}
-
-.dark-theme .contact-details h4 {
-    color: #7ecbff !important;
-}
-
-.dark-theme .contact-details p {
-    color: #b0b8c9 !important;
-}
-
-.dark-theme #form-status.success {
-    background: #1e4a2e !important;
-    color: #9ae6b4 !important;
-    border-color: #38a169 !important;
-}
-
-.dark-theme #form-status.error {
-    background: #4a1e1e !important;
-    color: #feb2b2 !important;
-    border-color: #e53e3e !important;
-}
-
-.dark-theme #form-status.loading {
-    background: #1e4a5e !important;
-    color: #9de6ff !important;
-    border-color: #3182ce !important;
-}
-
-.dark-theme .contact-form input::placeholder,
-.dark-theme .contact-form textarea::placeholder {
-    color: #718096 !important;
 }

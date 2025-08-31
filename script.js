@@ -1512,29 +1512,7 @@
         initializeTranslation();
     }
 
-    // Dark Theme Switcher
-    const darkSwitchBtn = document.getElementById('dark-switch');
-    function setDarkTheme(enabled) {
-        if (enabled) {
-            document.documentElement.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-            if (darkSwitchBtn) darkSwitchBtn.textContent = '☀️';
-        } else {
-            document.documentElement.classList.remove('dark-theme');
-            localStorage.setItem('theme', 'light');
-            if (darkSwitchBtn) darkSwitchBtn.textContent = '🌙';
-        }
-    }
-    if (darkSwitchBtn) {
-        darkSwitchBtn.addEventListener('click', function() {
-            const isDark = document.documentElement.classList.contains('dark-theme');
-            setDarkTheme(!isDark);
-        });
-    }
-    // Load theme preference
-    if (localStorage.getItem('theme') === 'dark') {
-        setDarkTheme(true);
-    }
+
 
     // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
